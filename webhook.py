@@ -37,7 +37,8 @@ def makeResponse(req):
             { "text":
                   { "text": speech } }]}
     #return { # "speech": speech, # "displayText":speech, # "source":"apiai-weather-webhook"}
-if __name__=='__main__': port=int(os.getenv('PORT',5000))
-print("starting on port %d" % port)
-app.run(debug=False, port=port, host='0.0.0.0')
+if __name__=='__main__':
+    port=int(os.getenv('PORT',5000))
+    print("starting on port %d" % port)
+    app.run(debug=False, port=port, host='0.0.0.0')
 
